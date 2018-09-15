@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="stylesheet" href="C:\Users\SURESH\Desktop\bootstrap-4.1.1-dist\css\bootstrap.min.css">
+<script src="C:\Users\SURESH\Desktop\angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="">
+<div class="container" >
+<h1>My Market</h1><font color=red>
+<h3>vegetables</h3>
+<button type="button" class="btn btn-info">potatos<span class="badge">$5/kg</span></button>
+<button type="button" class="btn btn-info">brinjal<span class="badge">$15/kg</span></button>
+<button type="button" class="btn btn-info">onion<span class="badge">$10/kg</span></button>
+<button type="button" class="btn btn-info">Tomato<span class="badge">$15/kg</span></button>
+<button type="button" class="btn btn-info">ladyfinger<span class="badge">$12/kg</span></button>
+<button type="button" class="btn btn-info">carret<span class="badge">$10/kg</span></button>
+<button type="button" class="btn btn-info">cucumber<span class="badge">$20/kg</span></button>
+<button type="button" class="btn btn-info">cauliflower<span class="badge">$25/kg</span></button>
+<button type="button" class="btn btn-info">pumpkin<span class="badge">$20/kg</span></button>
+<button type="button" class="btn btn-info">beans<span class="badge">$15/kg</span></button>
+<button type="button" class="btn btn-info">ginger<span class="badge">$12/kg</span></button>
+<button type="button" class="btn btn-info">garlic<span class="badge">$30/kg</span></button>
+
+<form>
+<table class="table table-bordered">
+<tr><td>
+potatos<td><input type="text" ng-model="n1"placeholder="enter no of kg's" size=10><td>
+brinjal<td><input type="text" ng-model="n2"placeholder="enter no of kg's" size=10><tr><td>
+onion<td><input type="text" ng-model="n3" placeholder="enter no of kg's"size=10><td>
+Tomato<td><input type="text" ng-model="n4"placeholder="enter no of kg's"size=10><tr><td>
+ladyfinger<td><input type="text" ng-model="n5"placeholder="enter no of kg's"size=10><td>
+carret<td><input type="text" ng-model="n6"placeholder="enter no of kg's"size=10><tr><td>
+cucumber<td><input type="text" ng-model="n7"placeholder="enter no of kg's"size=10><td>
+cauliflower<td><input type="text" ng-model="n8"placeholder="enter no of kg's"size=10><tr><td>
+pumpkin<td><input type="text" ng-model="n9"placeholder="enter no of kg's"size=10><td>
+beans<td><input type="text" ng-model="n10"placeholder="enter no of kg's"size=10><tr><td>
+ginger<td><input type="text" ng-model="n11"placeholder="enter no of kg's"size=10><td>
+garlic<td><input type="text" ng-model="n12"placeholder="enter no of kg's"size=10>
+</table>
+</form>
+Cost:<font color=green>${{+n1*5--n2*15--n3*10--n4*15--n5*12--n6*10--n7*20--n8*25--n9*20--n10*15--n11*12--n12*30}}</font>
+
+</div>
+
+<style>
+.badge{background-color:blue;font-size:15px;}
+form.ng-dirty{background-color:lightblue;}
+
+</style>
+<div class=container>
+<h3>cooldrinks</h3>
+<button type="button" class="btn btn-info">Mazza<span class="badge">$35/li</span></button>
+<button type="button" class="btn btn-info">pepsi<span class="badge">$25/li</span></button>
+<button type="button" class="btn btn-info">sprite<span class="badge">$40/li</span></button>
+<button type="button" class="btn btn-info">Thumsup<span class="badge">$20/li</span></button>
+<button type="button" class="btn btn-info">7up<span class="badge">$15/li</span></button>
+<button type="button" class="btn btn-info">slice<span class="badge">$10/li</span></button>
+<button type="button" class="btn btn-info">badam<span class="badge">$20/li</span></button>
+
+<form>
+<table class="table table-bordered">
+<tr><td>
+Mazza<td><input type="text" ng-model="s1"placeholder="enter no of li's" size=10><td>
+pepsi<td><input type="text" ng-model="s2"placeholder="enter no of li's" size=10><tr><td>
+sprite<td><input type="text" ng-model="s3" placeholder="enter no of li's"size=10><td>
+Thumpsup<td><input type="text" ng-model="s4"placeholder="enter no of li's"size=10><tr><td>
+7up<td><input type="text" ng-model="s5"placeholder="enter no of li's"size=10><td>
+slice<td><input type="text" ng-model="s6"placeholder="enter no of li's"size=10><tr><td>
+badam<td><input type="text" ng-model="s7"placeholder="enter no of li's"size=10><tr><td>
+</table>
+</form>
+<font color=red>Cost:<td><font color=green>${{+s1*35--s2*25--s3*40--s4*20--s5*15--s6*10--s7*20}}</font>
+
+<h3 text align=left>
+<font color=red>Total Cost:<font color=green>${{+n1*5--n2*15--n3*10--n4*15--n5*12--n6*10--n7*20--n8*25--n9*20--n10*15--n11*12--n12*30--s1*35--s2*25--s3*40--s4*20--s5*15--s6*10--s7*20}}</font>
+
+<button type="button" class="btn btn-info">Order</button>
+</h3>
+</div>
+</div>
+
+
+</body>
+</html>
